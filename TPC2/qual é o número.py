@@ -17,7 +17,6 @@ def qualéonúmero ():
         if a=="igual":
             print ("O seu número é:",c)
             b=13 # quando escrevemso b=13 ele vai acabar com o ciclo
-            b=b+1
         else:
             if a=="superior":
                     min=c
