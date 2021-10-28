@@ -1,0 +1,77 @@
+import random
+
+def menu():
+    print("Gestão de listas de inteiros")
+    print("(1) Introduza a lista à mão;")
+    print('(2) Gerar lista com valores aleatórios;')
+    print('(3) Maior elemento da lista;')
+    print('(4) Bubble Sort da lista;')
+    print("...")
+    print("(0) Sair")
+    
+def criar_manual():
+    a=int(input("Intoduza o nº de elementos:"))
+    b=0
+    l=[]
+    while a!=b:
+       b=b+1
+       c=int(input("Introduza o elemento {}:".format(b)))
+       l.append(c)
+    return l
+
+def criarListaA():
+    a=int(input("Intoduza o nº de elementos:"))
+    b=0
+    l=[]
+    while a!=b:
+       b=b+1
+       c=random.randint(1, 100)
+       l.append(c)
+    return l
+
+def maiorElemento(l):
+    maior=l[0]
+    for i in range(l):
+       if l[i]>maior:   
+           maior=l[i]
+    return maior
+
+def BubbleSort():
+    lista=[]
+    l=int(input("Quantos valores quer meter na lista?"))
+    for i in range(l):
+        a=int(input("Introduza um elemento a adicionar:"))
+        lista.append(a)
+    print(lista)
+    n=1
+    while n!=0:    
+        n=0
+        for i in range(len(lista)-1):
+            if lista[i]>lista[i+1]:
+                var=lista[i]
+                lista[i]= lista[i+1]
+                lista[i+1]=var
+                n=n+1
+    return lista
+    
+menu()
+a=int(input("Qual a sua opção?"))
+while a!=0:
+    if a == 1:
+        lis=criar_manual()
+        print(lis)
+        menu()
+        a=int(input("Qual a sua opção?"))
+    elif a==2:
+        lis=criarListaA()
+        print(lis)
+        menu()
+        a=int(input("Qual a sua opção?"))
+    elif a==3:
+        print(maiorElemento())
+    elif a==4:
+        print(BubbleSort())
+    elif a==0:
+        print("Adeus")
+    else:
+        print("Erro")
