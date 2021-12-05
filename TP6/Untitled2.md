@@ -6,9 +6,9 @@ __Identificador__: TP6
 
 __Título__: Função de polinómios/representação de polinómios
 
-__Data início__: 20/11/2021
+__Data início__: 2021/11/20
 
-__Data fim__ : 24/11/2021
+__Data fim__ : 2021/11/24
 
 __Supervisor__ :Carlos Ramalho, https://www.di.uminho.pt/~jcr/thesup-v2.php
 
